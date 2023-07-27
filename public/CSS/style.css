@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* CSS BODY */
+  body {
+    font-size: 12px;
+    font-family: roboto;
+    background-color: #ebebeb;
+  }
+  
+  /* CSS HEADER */
+  header {
+    background-color: #eac926;
+    padding: 10px;
+  }
+  
+  .logo {
+    width: 40%;
+    display: inline;
+    margin-left: 10px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .buscador {
+    padding-left: 4px;
+    display: flex;
+    height: 65%;
+  }
+  .barra-busqueda {
+    width: 65%;
+    border: 1px solid white;
+    border-radius: 2px;
+    display: flex;
+  }
+  .fa-search{
+    font-size: 22px;
+    display: flex;
+  }
+  
+  .fa-hand-holding-usd {
+    margin-right: 5px;
+  }
+  
+  .cuotas {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 13px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .fa-id-card,
+  .fa-sign-in-alt,
+  .fa-shopping-basket {
+    margin-left: 5px;
+  }
+  
+  .burger-menu {
+    margin: auto;
+    background-color: #03264c;
+    color: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  /* CSS MAIN */
+  main {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .banner {
+    width: 100%;
+    margin: 0;
+  }
+  .title{
+    width: 90%;
+    text-align: start;
+    font-size: 24px;
+    color: #666;
+  }
+  .section1, .section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .productos {
+    background-color: white;
+    max-width: 360px;
+    margin-bottom: 10px;
+  }
+  
+  .producto-imagen {
+    width: 100%;
+  }
+  
+  .detalle-producto {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+  }
+  
+  .des {
+    display: flex;
+    position: relative;
+    justify-content: start;
+    align-items: baseline;
+    width: 100%;
+    gap: 15px;
+  }
+  
+  #icon{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left: 290px;
+    bottom: 30px;
+    align-content: center;
+    color: green;
+  }
+  
+ 
+  .des h3 {
+    font-size: 18px;
+  }
+  
+  .descuento {
+    font-size: 16px;
+  }
+  
+  .nombre {
+    font-size: 16px;
+    display: none;
+    color: #666;
+  }
+  
+  /* CSS FOOTER */
+  footer {
+    text-align: center;
+    margin: 20px;
+  }
+  .efectivo{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: blue;
+  }
+  .efectivo:hover{
+    color:#eac926;
+    cursor: pointer;
+  }
+  
+  /* CSS MOBILE ONLY */
+  .menu {
+    display: none;
+  }
+ 
+  
+  /* CSS MEDIA QUERY TABLET */
+  @media (min-width: 426px) {
+  .logo {
+      width: 50%;
+    }
+  .buscador {
+      display: flex;
+      justify-content: end;
+      align-content: center;
+      height: 50%;
+      width: 50%;
+      padding-top: 20px;
+      margin-right: 10px;
+    }
+    
+  .barra-busqueda {
+      margin-left: 7px;
+      width: 80%;
+      height: 40px;
+    }
+  .header{
+      justify-content: left;
+    }
+  .section1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .section2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+   }
+  .title{
+    margin: 10px 10px 10px 20px;
+  }
+  .nombre {
+    display: block;
+    margin-top: 10px;
+  }
+  .cuotas {
+    font-size: 20px;
+  }
+  
+  .fa-search {
+    font-size:22px;
+  }
+  .productos {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    max-width: 300px; 
+  }
+  #icon{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left: 250px;
+    bottom: 30px;
+    align-content: center;
+  }
+  
+  .menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+  }
+  
+  .burger-menu {
+    display: none;
+  }
+  .access{
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    font-size: 15px;
+    list-style-type: none;
+    gap: 15px;
+  }
+
+  .perfil{
+    display: inline-flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    font-size: 15px;
+    list-style-type: none;
+    gap: 15px;
+  }
+  } 
+  
+  /* CSS MEDIA QUERY DESKTOP */
+  @media (min-width: 769px) {
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .title{
+   margin: 10px 10px 10px 10px;
+  }
+  .menu{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+  }
+  .access{
+      display: inline-flex;
+      justify-content: start;
+      flex-direction: row;
+      font-size: 20px;
+      list-style-type: none;
+      gap: 25px;
+    }
+  .perfil{
+      display: inline-flex;
+      justify-content: end;
+      flex-direction: row;
+      font-size: 20px;
+      list-style-type: none;
+      gap: 25px;
+    }
+  
+  .productos {
+      max-width: 265px;
+      margin-left: 20px;
+      transition: all 0.5s;
+    }
+    #icon {
+      left: 220px;
+    }
+  .nombre {
+      color: white;
+      transition: all 0.5s;
+    }
+  
+  .productos:hover {
+      box-shadow: 0px 0px 5px rgb(100, 100, 100);
+    }
+  
+  .productos:hover .nombre {
+      color: #666;
+    }
+  
+  .productos:hover #icon {
+      transform: rotate(-60deg);
+    }
+  footer{
+  font-size: 20px;
+    }
+  }
